@@ -7,8 +7,8 @@ export default function Learner({ learner }) {
       <h2>{learner.name}</h2>
       <p>{learner.bio}</p>
       <h4>Scores:</h4>
-      {learner.scores.map((s, idx) => (
-        <Score key={idx} score={s} />
+      {learner.scores.map((s, index) => (
+        <Score key={index} score={s} />
       ))}
     </div>
   );
